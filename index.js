@@ -14,10 +14,13 @@ const cors = require('cors');
 //##### middlewares begin
 
 // use bodyparser
-// app.use(bodyParser.json());
+app.use(bodyParser.json());
+/**
+ *  or app.use (express.json()); works too
+ */
 
 //cors
-// app.use(cors());
+app.use(cors());
 
 // import the routes
 const authRoute = require('./routes/auth');
