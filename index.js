@@ -26,7 +26,7 @@ app.use(cors());
 const authRoute = require('./routes/auth');
 
 // routes
-app.use('/api/user', authRoute);
+app.use('/api/user', authRoute); 
 
 //######### middlewares end
 
