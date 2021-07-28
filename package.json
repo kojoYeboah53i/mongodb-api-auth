@@ -1,0 +1,11 @@
+{
+  "name": "mongodb-api-auth",
+  "version": "1.0.0",
+  "description": "node auth rest api with mongodb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Isaac Yeboah",
+  "license": "ISC"
+}
