@@ -13,5 +13,13 @@ const userSchema = mongoose.Schema({
         min: 6,
         max: 255
     },
+    password :{
+        type: String,
+        required: true,
+        min: 6,
+        max: 255
+    },
+},{ timestamps: true });
 
-});
+
+module.exports = mongoose.model('UserData', userSchema);
