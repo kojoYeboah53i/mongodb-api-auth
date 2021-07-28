@@ -20,10 +20,10 @@ const cors = require('cors');
 // app.use(cors());
 
 // import the routes
-// const routes = require('./routes/posts');
+const authRoute = require('./routes/auth');
 
 // routes
-// app.use('/', routes);
+app.use('/api/user', authRoute);
 
 //######### middlewares end
 
