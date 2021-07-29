@@ -24,3 +24,6 @@ router.post('/login', (req, res) => {
 });
 
 module.exports = router;
+
+//ways to make money with code
+//https://www.youtube.com/watch?v=dRHsg6hWcNo
