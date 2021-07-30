@@ -22,7 +22,7 @@ const schema = {
 } 
 
 //Login Validation
-const loginValidation = () => {
+const loginValidation = data => {
     const schema = {
     
       email: Joi.string()
