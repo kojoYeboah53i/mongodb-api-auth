@@ -22,9 +22,11 @@ app.use(cors());
 
 // import the routes
 const authRoute = require("./routes/auth");
+const postRoute = require("./routes/posts");
 
 // routes
 app.use("/api/user", authRoute);
+app.use("/api/user", postRoute);
 
 //######### middlewares end
 
