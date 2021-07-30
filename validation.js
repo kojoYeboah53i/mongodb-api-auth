@@ -33,7 +33,7 @@ const loginValidation = data => {
       password: Joi.string()
       .min(6)
       .required()
-    };
+    }; 
     
         return Joi.validate(data, schema);
     } 
