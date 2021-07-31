@@ -26,7 +26,7 @@ const postRoute = require("./routes/posts");
 
 // routes
 app.use("/api/user", authRoute);
-app.use("/api/user", postRoute);
+app.use("/api/posts", postRoute);
 
 //######### middlewares end
 
