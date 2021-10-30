@@ -29,7 +29,6 @@ app.use("/api/user", authRoute);
 app.use("/api/posts", postRoute);
 
 //######### middlewares end
-
 const dbURL = process.env.DB_CONNECTION;
 //connect to the database
 mongoose
@@ -39,6 +38,7 @@ mongoose
   })
   .then(() => {
     console.log("Connection to database successful");
+    
     app.listen(port, () => {
       console.log(`Server listening on port ${port}`);
     });
