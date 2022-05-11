@@ -1,0 +1,23 @@
+ GET http://localhost:6000/api/user/users-all
+
+###
+
+POST http://localhost:6000/api/user/register
+content-type: application/json
+
+
+{
+    "name": "Owusu Kumi",
+    "email": "owusu@mail.com",
+    "password": "123456"
+}
+
+###
+
+POST http://localhost:6000/api/user/login
+content-type: application/json
+
+{
+    "email": "owusu@mail.com",
+    "password": "123456"
+}

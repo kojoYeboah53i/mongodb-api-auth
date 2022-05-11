@@ -56,10 +56,17 @@ router.post('/login',  async (req, res) => {
        //generate token
        //const token = jwt.sign({ id: user.id }, 'secret', { expiresIn: '1h' });
          const token = jwt.sign({ _id: user._id }, process.env.TOKEN_SECRET, { expiresIn: '1h' });    
-         res.header('Auth-token', token).send(token);
+        //  res.header('Auth-token', token).send(token);
       
-    //    res.send('login successful...');
+       res.send('login successful...');
 });
+
+//get all users
+router.get('/users-all', async (req, res) => {
+    const users = await User.find();
+    res.json(users);
+}
+);
 
 module.exports = router;
 
